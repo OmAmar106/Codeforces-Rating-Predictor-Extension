@@ -6,17 +6,16 @@
     <title>Codeforces Rating Predictor</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="centered-container">
         <h2>Codeforces Rating Predictor</h2>
-        <form class="search-form" onsubmit="func()">
-            <input type="text" name="profile_name" placeholder="Enter Username">
-            <button type="submit" class="search-button">
+        <div class="search-form">
+            <input type="text" name="profile_name" placeholder="Enter Username" id="name">
+            <button class="search-button" id="change">
                 <i class="fas fa-search"></i>
             </button>
-        </form>
+        </div>
         <!-- {% if flag %}
             <br>
             <P style="color:red">User does not exists or the CF API is Down</P>
@@ -30,5 +29,6 @@
             <i class="fab fa-linkedin"></i>
         </a>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
